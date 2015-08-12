@@ -1,0 +1,14 @@
+{
+	"id": "{863E94EF-76CE-4C34-97B0-695A4547A5A1}",
+	"name": "RSL366FunkDevice",
+	"type": 3,
+	"vendor": "",
+	"aliases": 
+	[
+		"RSL366FunkDevice"
+	],
+	"parentRequirements": [],
+	"childRequirements": [],
+	"implemented": [],
+	"prefix": "RSL"
+}

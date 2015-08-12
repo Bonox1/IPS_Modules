@@ -1,0 +1,20 @@
+{
+	"elements":
+	[
+	{ "type": "Select", "name": "systemcode", "caption": "Kanal",
+    "options": [
+        { "label": "I", "value": 1 },
+        { "label": "II", "value": 2 },
+        { "label": "III", "value": 3 },
+        { "label": "IV", "value": 4 }]
+	},
+	{ "type": "Select", "name": "programcode", "caption": "Taste",
+    "options": [
+        { "label": "1", "value": 1 },
+        { "label": "2", "value": 2 },
+        { "label": "3", "value": 3 },
+        { "label": "4", "value": 4 }]
+	},
+	{ "type": "NumberSpinner", "name": "retries", "caption": "Wiederholungen" }
+	]
+}
