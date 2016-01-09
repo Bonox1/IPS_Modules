@@ -10,14 +10,18 @@
 			
 			//These lines are parsed on Symcon Startup or Instance creation
 			//You cannot use variables here. Just static values.
+		}
+		
+		public function Create()
+		{
+			//Never delete this line!
+			parent::Create();
+				
 			$this->RegisterPropertyInteger("systemcode", 1);
 			$this->RegisterPropertyInteger("programcode", 1);
 			$this->RegisterPropertyInteger("retries", 4);
 			$this->RegisterPropertyString("protokoll", "rsl366");
-			
 		}
-		
-
 		public function ApplyChanges()
 		{
 			//Never delete this line!
