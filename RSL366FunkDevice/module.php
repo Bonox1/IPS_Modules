@@ -16,6 +16,7 @@
 			$this->RegisterPropertyString("protokoll", "rsl366");
 			
 		}
+		
 
 		public function ApplyChanges()
 		{
@@ -62,7 +63,8 @@
 			// pilight-send -p kaku_switch -i 1 -u 1 -t
 			print_r("befehl=".$cmd."\n");
 			//$rc = trim(@shell_exec("/usr/local/bin/pilight-send -p $proto -i $id -u $unit $value"));
-			for ($i = 1; $i <= 4; $i++) {
+			$retries=$this->ReadPropertyInteger("retries");
+			for ($i = 1; $i <= $retries; $i++) {
 				$rc = trim(@shell_exec($cmd));
 			}
 			
